@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/uploadSd3"
+        android:text="Upload S3 File"
+        android:onClick="uploadFileToS3"/>
+
+    <Button
+
+        android:layout_below="@+id/uploadSd3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/downloadSd3"
+        android:text="Download S3 File"
+     />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/downloadSd3"
+        android:id="@+id/fetchFile"
+        android:text="Fetch File From S3"
+        android:onClick="fetchFileFromS3"
+      />
+
+    <TextView
+        android:id="@+id/textViewstatus"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:textSize="30sp"
+        android:text=""
+        android:layout_below="@+id/imageView_download"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="93dp" />
+
+    <ImageView
+        android:id="@+id/imageView_download"
+        android:layout_width="400dp"
+        android:layout_height="390dp"
+
+
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/fetchFileToS3" />
+
+    <TextView
+        android:id="@+id/textfile"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:textSize="30sp"
+
+        android:layout_below="@+id/textViewstatus"
+        android:layout_centerHorizontal="true"
+        />
+
+
+</RelativeLayout>
